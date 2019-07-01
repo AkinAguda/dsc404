@@ -1,0 +1,83 @@
+.container {
+  font-family: sans-serif;
+  height: 100vh;
+  background-image: url(./assets/compressed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+.fof {
+  font-size: 150px;
+}
+.caption,
+.fof {
+  align-self: center;
+  display: flex;
+}
+.caption {
+  font-size: 20px;
+}
+.first-four,
+.zero,
+.second-four {
+  padding: 0 10px;
+}
+.first-four {
+  animation: 1s four-vanish forwards infinite;
+}
+.second-four {
+  animation: 1s four-vanish forwards infinite;
+}
+.zero {
+  animation: 1s zero-vanish forwards infinite;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes zero-vanish {
+  10% {
+    transform: translateX(-3px);
+  }
+  20% {
+    transform: translateX(3px);
+  }
+  30% {
+    transform: translateX(-3px);
+  }
+  40% {
+    transform: translateX(3px);
+  }
+  50% {
+    transform: translateX(-3px);
+  }
+  60% {
+    transform: translateX(3px);
+  }
+  70% {
+    transform: translateX(-3px);
+  }
+  80% {
+    transform: translateX(3px);
+  }
+  90% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes four-vanish {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
